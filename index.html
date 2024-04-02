@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CRM Dashboard Customers" />
+    <meta name="keywords" content="CRM Dashboard Customers" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__boxes">
+        <div class="main__box sidebar">
+          <div class="sidebar__logo">
+            <img src="img/setting.svg" alt="logo" width="37" height="37" />
+            <p>Dashboard <span>v.01</span></p>
+          </div>
+          <div class="sidebar__mobile-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="sidebar__menu">
+            <li>
+              <a class="sidebar__menu-item" href="#">
+                <img
+                  src="img/dashboard.svg"
+                  alt="key in square"
+                  class="sidebar__dropdown-icon"
+                  width="24"
+                  height="24"
+                />
+                <p class="sidebar__dropdown">Dashboard</p>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__menu-item" href="#">
+                <img
+                  src="img/product.svg"
+                  alt="3d square"
+                  class="sidebar__dropdown-icon"
+                  width="24"
+                  height="24"
+                />
+                <p class="sidebar__dropdown">Product</p>
+                <svg
+                  class="sidebar__dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M6 12L10 8L6 4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__menu-item active" href="#">
+                <img
+                  src="img/customer.svg"
+                  alt="user in square"
+                  class="sidebar__dropdown-icon"
+                  width="24"
+                  height="24"
+                />
+                <p class="sidebar__dropdown">Customers</p>
+                <svg
+                  class="sidebar__dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M6 12L10 8L6 4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__menu-item" href="#">
+                <img
+                  src="img/income.svg"
+                  alt="wallet money"
+                  class="sidebar__dropdown-icon"
+                  width="24"
+                  height="24"
+                />
+                <p class="sidebar__dropdown">Income</p>
+                <svg
+                  class="sidebar__dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M6 12L10 8L6 4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__menu-item" href="#">
+                <img
+                  src="img/promote.svg"
+                  alt="discount shape"
+                  class="sidebar__dropdown-icon"
+                  width="24"
+                  height="24"
+                />
+                <p class="sidebar__dropdown">Promote</p>
+                <svg
+                  class="sidebar__dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M6 12L10 8L6 4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__menu-item" href="#">
+                <img
+                  src="img/help.svg"
+                  alt="message question"
+                  class="sidebar__dropdown-icon"
+                  width="24"
+                  height="24"
+                />
+                <p class="sidebar__dropdown">Help</p>
+                <svg
+                  class="sidebar__dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M6 12L10 8L6 4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar__user">
+            <img
+              class="sidebar__user-img"
+              src="img/user-photo.webp"
+              alt="Evano photo"
+              width="42"
+              height="42"
+            />
+            <div class="sidebar__user-data">
+              <p class="sidebar__user-name">Evano</p>
+              <p class="sidebar__user-position">Project Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="main__box content">
+          <h1 class="content__title">Hello Evano <span>👋🏼</span>,</h1>
+          <div class="content-item" id="group1" style="display: none">
+            <h2>Dashboard</h2>
+          </div>
+          <div class="content-item" id="group2" style="display: none">
+            <h2>Product</h2>
+          </div>
+          <div class="content-item" id="group3" style="display: block">
+            <div class="content__header">
+              <div class="content__header-text">
+                <h2>All Customers</h2>
+                <p class="content-item__acc">Active Members</p>
+              </div>
+              <form role="search" class="searchform" action="" method="get">
+                <input
+                  class="searchform__input"
+                  type="search"
+                  name="search"
+                  placeholder="Search"
+                  autocomplete="off"
+                />
+                <button type="submit" class="searchform__btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                      stroke="#7E7E7E"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M21 21L16.65 16.65"
+                      stroke="#7E7E7E"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="content__table">
+              <table>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td><span class="st st-active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td>(205) 555-0100</td>
+                  <td>floyd@yahoo.com</td>
+                  <td>Kiribati</td>
+                  <td><span class="st st-inactive">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td>(302) 555-0107</td>
+                  <td>ronald@adobe.com</td>
+                  <td>Israel</td>
+                  <td><span class="st st-inactive">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td>(252) 555-0126</td>
+                  <td>marvin@tesla.com</td>
+                  <td>Iran</td>
+                  <td><span class="st st-active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Jerome Bell</td>
+                  <td>Google</td>
+                  <td>(629) 555-0129</td>
+                  <td>jerome@google.com</td>
+                  <td>Réunion</td>
+                  <td><span class="st st-active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Kathryn Murphy</td>
+                  <td>Microsoft</td>
+                  <td>(406) 555-0120</td>
+                  <td>kathryn@microsoft.com</td>
+                  <td>Curaçao</td>
+                  <td><span class="st st-active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Jacob Jones</td>
+                  <td>Yahoo</td>
+                  <td>(208) 555-0112</td>
+                  <td>jacob@yahoo.com</td>
+                  <td>Brazil</td>
+                  <td><span class="st st-active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Kristin Watson</td>
+                  <td>Facebook</td>
+                  <td>(704) 555-0127</td>
+                  <td>kristin@facebook.com</td>
+                  <td>Åland Islands</td>
+                  <td><span class="st st-inactive">Inactive</span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="content__footer">
+              <div class="content__footer-text">
+                Showing data 1 to 8 of 256K entries
+              </div>
+              <ul class="pagination">
+                <li class="pagination__item pagination__prev">
+                  <a href="#">&#60;</a>
+                </li>
+                <li class="pagination__item active"><a href="#">1</a></li>
+                <li class="pagination__item"><a href="#">2</a></li>
+                <li class="pagination__item"><a href="#">3</a></li>
+                <li class="pagination__item"><a href="#">4</a></li>
+                <li class="pagination__more">...</li>
+                <li class="pagination__item"><a href="#">40</a></li>
+                <li class="pagination__item pagination__next">
+                  <a href="#">&#62;</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-item" id="" style="display: none">
+            <h2>Income</h2>
+          </div>
+          <div class="content-item" id="" style="display: none">
+            <h2>Promote</h2>
+          </div>
+          <div class="content-item" id="" style="display: none">
+            <h2>Help</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
